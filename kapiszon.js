@@ -15,6 +15,9 @@ var $=function kapiszon(id) {
 		}
 		
 	}
+var html=(function(el,txt) {
+		$(el).innerHTML=txt;
+	});
 	
 	
 
@@ -55,5 +58,5 @@ function loadURL(url){
 }
 
   
-function zapal(el){$("#"+el).style.opacity='1.0';}	
-function zgas(el) {$("#"+el).style.opacity='0.5';}	
+function zapal(el){$(el).style.opacity='1.0';}	
+function zgas(el) {$(el).style.opacity='0.5';}	
