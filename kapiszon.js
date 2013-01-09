@@ -4,6 +4,29 @@ like not jQuery
 licence: completly free
 */
 
+
+
+function dolar(){
+	
+	this.html = function(id,content) {
+		console.log(id);
+		el=document.getElementById(id);
+		console.log(el);
+		el.innerHTML=content;
+	}
+
+	
+}
+
+$$=new dolar()
+
+
+
+
+
+
+
+
 var $=function kapiszon(id) {
   var prefix=id[0];
 	var iid=id.slice(1,id.length);
